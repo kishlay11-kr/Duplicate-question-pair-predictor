@@ -11,6 +11,7 @@ def download_nltk_resources():
     except LookupError:
         nltk.download("stopwords")
         nltk.download("punkt")
+download_nltk_resources()
 
 cv = pickle.load(open('cv.pkl','rb'))
 
