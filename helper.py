@@ -5,6 +5,12 @@ import distance
 from fuzzywuzzy import fuzz
 import pickle
 import numpy as np
+def download_nltk_resources():
+    try:
+        stopwords.words("english")
+    except LookupError:
+        nltk.download("stopwords")
+        nltk.download("punkt")
 
 cv = pickle.load(open('cv.pkl','rb'))
 
