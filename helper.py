@@ -5,6 +5,7 @@ import distance
 from fuzzywuzzy import fuzz
 import pickle
 import numpy as np
+import nltk
 def download_nltk_resources():
     try:
         stopwords.words("english")
